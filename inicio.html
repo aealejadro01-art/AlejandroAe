@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <section>
+            <h2>INICIO</h2>
+            <p>Las galaxias fósiles conocidas formalmente en la astronomía como galaxias enanas ultra débiles ,son auténticas reliquias del universo primitivo</p>
+            <p>Se les llama "fósiles" porque se formaron durante los primeros mil millones de años tras el Big Bang y han permanecido prácticamente congeladas en el tiempo, con muy pocos cambios desde entonces</p>
+            <section>
+            <img src="galaxia.jpg" alt="trabajo en proceso" class="menu-img">
+            <a href="indice.html" class="btn-regresar">← Volver al Menú Principal</a>
+            </section>
+        </main>
+
+    <div id="estrella">🌟</div>
+
+    <footer>
+        <p>🛸 Galaxias Fósiles 🛸</p>
+    </footer>
+
+      <script>
+        const estrella = document.getElementById('estrella');
+        let posX = window.innerWidth / 2 - 30;
+        let posY = 150;
+        estrella.style.left = posX + 'px';
+        estrella.style.top = posY + 'px';
+
+        window.addEventListener('pointerdown', (e) => {
+            const x = e.clientX - 30;
+            const y = e.clientY - 30;
+            estrella.style.transition = 'left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            estrella.style.left = x + 'px';
+            estrella.style.top = y + 'px';
+        });
+    </script>
+</body>
+</html>
