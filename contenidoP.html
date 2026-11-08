@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información principal</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <section>
+            <h2>INFORMACION PRINCIPAL</h2>
+            <p>Las galaxias fósiles son verdaderos misterios, para entender exactamente qué son y cómo nacieron, te brindamos esta informacion </p> 
+            <h2>1. ¿Qué son exactamente?</h2>
+            <P>Una galaxia fósil (o galaxia enana ultra débil) es una colección extremadamente antigua, tenue y pequeña de estrellas que orbita en la periferia de galaxias más grandes</p>
+            <h2>2. ¿Cómo nacen?</h2>
+            <p>El nacimiento y la detención de estas galaxias ocurrió en los primeros 1,000 millones de años tras el Big Bang mediante un proceso en tres etapas principales:
+            <h2>3.¿Cómo se congelaron en el tiempo?</h2>
+            <p>Etapa 1: La acumulación de materia oscura (Hace ~13,500 millones de años)
+            Poco después del Big Bang, el universo era una sopa caliente de gas y materia. La materia oscura comenzó a agruparse por gravedad formando pequeños "pozos" o halos de atracción. El gas de hidrógeno y helio cayó dentro de estos pozos de materia oscura y comenzó a condensarse para encender las primeras estrellas del universo.
+            Etapa 2: El golpe de la "Reionización"
+            Cuando el universo tenía unos 500 a 800 millones de años, las primeras estrellas masivas y los primeros agujeros negros comenzaron a emitir una radiación ultravioleta extremadamente potente. Este periodo se conoce como la Era de la Reionización.
+            Esta radiación arrasó el espacio intergaláctico y calentó el gas de las galaxias pequeñas. Al calentarse tanto, el gas se expandió y salió disparado fuera de la galaxia o se volvió demasiado caliente para colapsar y formar nuevas estrellas.     
+            Etapa 3: La sofocación definitiva y la "fosilización"
+                <h2>Datos cientificos</h2>
+                <h2>1. Extrema dominancia de materia oscura</h2>
+                <p>Son los sistemas estelares más dominados por materia oscura conocidos en el universo. Mientras que en galaxias grandes como la Vía Láctea la materia oscura representa alrededor del 90% de la masa, en las galaxias fósiles hasta el 99% de su masa total es materia oscura invisible, lo que las mantiene unidas a pesar de tener una gravedad visible mínima</p>
+                <h2>2. Una metalicidad extremadamente baja</h2>
+                <p>Las estrellas que las componen son de las más "pobres en metales" del cosmos (en astronomía, se le llama "metal" a cualquier elemento más pesado que el hidrógeno y el helio). Esto demuestra químicamente que se formaron en una época en la que las supernovas aún no habían contaminado el medio interestelar con elementos pesados</p>
+                <h2>3. El freno definitivo por la "Reionización"</h2>
+                <p>Los datos sugieren que todas estas galaxias detuvieron su formación estelar de manera casi idéntica y simultánea hace más de 12,000 millones de años. El causante fue la Era de la Reionización, un periodo en el que la radiación ultravioleta del universo primitivo barrió y calentó el gas que necesitaban para seguir creando estrellas</p>
+                <h2>4. Población estelar minúscula ("Galaxias fantasma")</h2>
+                <p>A pesar de ocupar volúmenes espaciales considerables, su brillo es casi imperceptible porque contienen apenas entre unos pocos cientos y unos miles de estrellas. Por esta razón, los telescopios tradicionales no podían verlas y se les denomina comúnmente "galaxias fantasma"</p>
+                <h2>Links de interes</h2>    
+               
+                 <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                 <a href="https://share.google/BuZaxHqCyl7U5NWtx" target="_blank">Los secretos de la galaxia</a>
+                 <a href="https://share.google/lYbPD40R3LiHgrnCp" target="_blank">Afuera de la andromeda</a>
+                 <a href="https://share.google/La4E1wSvmvY3jADLS" target="_blank">Nuevos descubrimientos</a>
+                 </div>
+            <a href="indice.html" class="btn-regresar">← Volver al Menú Principal</a>
+          </section>
+          </main>
+
+    <div id="estrella">🌟 </div>
+
+    <footer>
+        <p>⭐ Galaxias Fósiles ⭐</p>
+    </footer>
+
+    <script>
+        const estrella = document.getElementById('estrella');
+        let posX = window.innerWidth / 2 - 30;
+        let posY = 150;
+        estrella.style.left = posX + 'px';
+        estrella.style.top = posY + 'px';
+
+        window.addEventListener('pointerdown', (e) => {
+            const x = e.clientX - 30;
+            const y = e.clientY - 30;
+            estrella.style.transition = 'left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            estrella.style.left = x + 'px';
+            estrella.style.top = y + 'px';
+        });
+    </script>
+</body>
+</html>
