@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Básica | Galaxias Fósiles</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <section>
+            <h2>INFORMACION ADICIONAL</h2>
+            <h2>Datos curiosos</h2>
+            <h2>1. Cápsulas del tiempo del universo temprano</h2>
+            <p>Estas galaxias se formaron en el amanecer del cosmos (la llamada Era de la Reionización). Al ser tan pequeñas y aisladas, no sufrieron los violentos procesos de fusión y reciclaje estelar que transformaron a galaxias más grandes como la Vía Láctea. Estudiarlas es esencialmente mirar una fotografía del universo cuando era un "bebé"</p>
+            <h2>2. Extremadamente tenues y difíciles de detectar</h2>
+            <p>A diferencia de las galaxias brillantes y majestuosas que solemos ver en las fotografías, las galaxias fósiles son tan tenues que durante mucho tiempo pasaron desapercibidas. Muchas contienen apenas unos pocos cientos o miles de estrellas dispersas en un espacio enorme, lo que las hace parecer más a cúmulos globulares gigantes que a galaxias completas</p>
+            <h2>3. Dominadas masivamente por la materia oscura</h2>
+            <p>Aunque tienen muy poca luz y pocas estrellas, son increíblemente pesadas. Los astrónomos han descubierto que están compuestas casi en su totalidad por materia oscura (en algunos casos, hasta el 99% de su masa). De hecho, son los objetos más dominados por materia oscura que se conocen en el universo, manteniéndose unidas por esta fuerza invisible a pesar de tener tan pocas estrellas</p>     
+            <h2>Temas similares</h2>    
+           <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+            <a href="https://share.google/EtHo8XKZi5e6lssj3">🌌 Via lactea 🐄</a>
+             <a href="https://share.google/dxLtBgasrkYCxGm3t">🌎 Sistema solar 🌞</a>
+             <a href="https://share.google/bX2CZudCsTFpnyUka">🚀 Lluvia de meteoritos 🛰️</a>
+               <div class="marquesina-marco">
+            <marquee scrollamount="4" direction="right">Glosario</marquee>
+                   <h2> 1. Galaxia fósil</h2>
+                   <p>Una galaxia pequeña, extremadamente tenue y antigua que dejó de formar estrellas en los primeros mil millones de años del universo, manteniéndose casi intacta hasta la actualidad</p>
+                   <h2>2. Materia oscura </h2>
+                   <p>Una sustancia invisible e imperceptible que no emite ni refleja luz, pero que representa la mayor parte de la masa del universo. Mantiene unidas a las galaxias mediante su potente fuerza gravitatoria</p>
+                       <h2>3. Era de la Reionización</h2>
+                       <p>Periodo en la infancia del cosmos en el que la radiación de las primeras estrellas y agujeros negros calentó e ionizó el gas de todo el espacio, deteniendo la formación de estrellas en galaxias pequeñas</p>
+                       <h2>4. Metalicidad </h2>
+                       <p>La proporción de elementos químicos más pesados que el hidrógeno y el helio (como el hierro, carbono u oxígeno) presentes en una estrella o galaxia. Una "baja metalicidad" indica una edad extremadamente antigua</p>
+                       <h2>5. Cúmulo globular</h2>
+                        <p>Una agrupación muy densa en forma de esfera compuesta por cientos de miles de estrellas viejas que orbitan en la periferia de una galaxia</p>
+                        <h2>6. Fusión galáctica (o canibalismo galáctico)</h2>
+                        <p>El proceso gravitacional mediante el cual una galaxia grande atrae, deforma y termina devorando a una galaxia más pequeña para integrar sus estrellas y masa</p>
+               </div>            
+           
+            
+            
+            <a href="indice.html" class="btn-regresar">← Volver al Menú Principal</a>
+        </section>
+    </main>
+
+    <div id="estrella">🌟 </div>
+
+    <footer>
+        <p>🚀 Galaxias Fósiles 🚀</p>
+    </footer>
+
+    <script>
+        const estrella = document.getElementById('estrella');
+        let posX = window.innerWidth / 2 - 30;
+        let posY = 150;
+        estrella.style.left = posX + 'px';
+        estrella.style.top = posY + 'px';
+
+        window.addEventListener('pointerdown', (e) => {
+            const x = e.clientX - 30;
+            const y = e.clientY - 30;
+            estrella.style.transition = 'left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            estrella.style.left = x + 'px';
+            estrella.style.top = y + 'px';
+        });
+    </script>
+</body>
+</html>
