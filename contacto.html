@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <section>
+            <h2>Contacto</h2>
+            <p>Quieres saber mas?</p>
+             <a href="https://share.google/EtHo8XKZi5e6lssj3">QUIERO SABER MAS!</a>
+             <a href="cuestionario.html" class="btn-regresar">📝 Ir al cuestionario</a>
+             <a href="indice.html" class="btn-regresar">← Volver al Menú Principal</a>
+          
+        </section>
+    </main>
+
+    <div id="estrella">🌟</div>
+
+    <footer>
+        <p>🌜 Galaxias Fósiles 🌜</p>
+    </footer>
+
+    <script>
+        const estrella = document.getElementById('estrella');
+        let posX = window.innerWidth / 2 - 30;
+        let posY = 150;
+        estrella.style.left = posX + 'px';
+        estrella.style.top = posY + 'px';
+
+        window.addEventListener('pointerdown', (e) => {
+            const x = e.clientX - 30;
+            const y = e.clientY - 30;
+            estrella.style.transition = 'left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            estrella.style.left = x + 'px';
+            estrella.style.top = y + 'px';
+        });
+    </script>
+</body>
+</html>
+
