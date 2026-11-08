@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxias fosiles</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+    <header class="menu-card">
+        <h1>Las reliquias del internet</h1>
+        <img src="fosil.jpg" alt="trabajo en proceso" class="menu-img">
+        <p>Conoce sobre las reliquias del universo que han estado desde el inicio de todo </p>
+            <nav class="botones">
+            <a href="inicio.html">🛸 Inicio 🛸</a>
+            <a href="contenidoP.html">⭐ Contenido principal ⭐</a>
+            <a href="infoadicional.html">🚀 Aún más información 🚀</a>
+            <a href="contacto.html">🌜 Opciones 🌜</a>
+        </nav>
+    </header>
+
+    <div id="estrella">🌟 </div>
+
+    <script>
+        const estrella = document.getElementById('estrella');
+        let posX = window.innerWidth / 2 - 30;
+        let posY = 150;
+        estrella.style.left = posX + 'px';
+        estrella.style.top = posY + 'px';
+
+        window.addEventListener('pointerdown', (e) => {
+            const x = e.clientX - 30;
+            const y = e.clientY - 30;
+            estrella.style.transition = 'left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            estrella.style.left = x + 'px';
+            estrella.style.top = y + 'px';
+        });
+    </script>
+</body>
+</html>
